@@ -1,1 +1,33 @@
 This is not a readme document 
+
+
+step one
+git init "project name" ////////// project now repository (file)
+
+step two
+git add. ///////////// add new file to staging area 
+
+step three
+git commit -m "message" //////// adds a snapshot to the repository 
+
+
+DATA FLOW 
+
+
+REMOTE REPOSITORY 
+|	|	|
+|	|	|
+|	FETCH	PUSH
+|	|	|
+|	|	|
+PULL---	LOCAL REPOSITORY 
+|	|	|
+|	|	|
+|	|	COMMIT
+|	|	|
+|		|
+|	INDEX (CACHED)
+|	|	|
+|	|	|
+HEAD	|	ADD
+WORKING DIRECTORY 
