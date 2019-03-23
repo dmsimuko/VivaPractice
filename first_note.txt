@@ -1,0 +1,10 @@
+Hello, this is the start of a new beginning 
+
+the end
+
+////////////////////////////////////////////////////////////////
+
+Managed to open this document on wordpad using filepath: 
+
+C:\Program Files\windows nt\accessories\wordpad.exe 
+
