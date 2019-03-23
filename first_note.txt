@@ -15,3 +15,7 @@ git status
 git log --oneline 
 
 git commit -a -m "msg"
+
+Connected to REMOTE repository up there in the cloud
+
+
