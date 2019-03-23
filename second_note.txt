@@ -1,6 +1,5 @@
 This is not a readme document 
 
-
 step one
 git init "project name" ////////// project now repository (file)
 
@@ -31,3 +30,7 @@ PULL---	LOCAL REPOSITORY
 |	|	|
 HEAD	|	ADD
 WORKING DIRECTORY 
+
+
+Using GIT GUI to make changes to documents and upload them to the remote repositiory. 
+Much easier if you ask me 
