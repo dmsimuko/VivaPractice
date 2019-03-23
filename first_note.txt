@@ -10,3 +10,8 @@ C:\Program Files\windows nt\accessories\wordpad.exe
 
 Modified file 
 
+git status 
+
+git log --oneline 
+
+git commit -a -m "msg"
