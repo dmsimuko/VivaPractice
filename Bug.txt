@@ -10,3 +10,11 @@ code:
 ,clc,lo. loosdw.com
 
 
+Origin is the name of your master repositiory so when accessing it type 
+
+git push origin master
+
+For the other branch type 
+
+git push contacts contacts 
+Wasnt a great idea
