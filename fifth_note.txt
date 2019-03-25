@@ -9,7 +9,6 @@ takes makefiles as input
 other ide's like VS, eclipse and code::blocks are also build systems
 they take other inputs specific to them 
 
-
 build system generators 
 you write generic recipe for a build system generator 
 bundle recipe with source code
@@ -25,10 +24,116 @@ CAN GENERTE INSTALLERS FOR A NUMBER OF OS
 cmake = build system generateor 
 make  = build system 
 
+input for cmake is set of files called cmakelists.txt 
+procide a systtem and and build system of project 
+
+cmake operates in same way to other OS 
+
+hello_cmake 
+hello.cpp 
+cmakelists.txt
+cmake needs to know which build system it should generate input type for 
+G++ as compiler and linker
+cmake builds files using 
+>cmake -G "MinGW Makefiles" ..
+now need to do is invoke the make program within mingw
+>mingw32-make
+output is hello.exe 
+build object and link output stages have both been performed 
+
+Port to visual studio 
+
+>cmake -G "Visual Studio 11 2012 Win64" .. to build files for VS
+>"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" amd64
+>msbuild hello.sln
+>debug\hello.exe
+
+GUI AND QT 
+
+GUI using QT 
+developing software with a graphical user interface (GUI)
+Window manager
+a software applicatrion with a gui must interact with the operating system through:
+describe apprearace and behavoiour of its window 
+code to handle user actions
+libraries like this are usually called User interface toolkits 
+
+QT 
+A set of libraries that allows you to cross-platform GUI with components like buttons menus file open dialogs 
+abstract layer 
+set of static and dynamic libraries that your program must then link at compile and run time 
+
+
+Qt based application 
+bin - executable code + dynamic libraries (.dll)
+lib - qt static libraries 
+include - QT header files that will be needed for compilation 
+
+need to make sure correct compiler is in the system path 
+>set PATH=C:\Qt\Tools\mingw530_32\bin;C:\Qt\5.9.1\mingw53_32\bin
+
+>g++ -c -fno-keep-inline-dllexport -pipe -O2 -std=gnu++11 -Wextra -Wall
+ >g++ -Wl,-s -Wl,-subsystem,windows -mthreads -o hello_qt.exe hello_qt.o 
+>hello_qt.exe
+cmake project to compile the qt application 
+
+files needed: hello_qt.pp/ cmakelists.txt 
+run cmake using batch file to generate mingw, compile and link using mingw32-make and test
+
+>mkdir build
+>cd build
+>cmake_gen_mingw.bat ..
+>mingw32-make
+>hello_qt.exe
+
+Qt designeer for gui design 
+
+main.cpp
+mainwindow.cpp
+mainwindow.h
+mainwindow.ui
+cmakelists.txt
+
+then build and run 
+>mkdir build
+>cd build
+>cmake_gen_mingw.bat ..
+>mingw32-make
+>hello_qt2
+
+
+basic layout 
 
 
 
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
