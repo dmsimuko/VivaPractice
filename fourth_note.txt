@@ -66,8 +66,6 @@ static library = archive containing 1 or more object (.o) files
 when compiling, must tell the compiler where to find header files that are included (I)
 when linking the program, tell linker where to find libraries (L)
 
-
-
 dynamic libraries-
 linked with the executable only when it is executed. happens at runtime 
 single copy of library exists on the computer and aplications dynamically link to and share library when run 

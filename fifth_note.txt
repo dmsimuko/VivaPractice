@@ -1,0 +1,34 @@
+cross platform suport - build system generators 
+build system 
+
+build recipe - outputs required
+
+common buils system include cmake, included with g++
+takes makefiles as input
+
+other ide's like VS, eclipse and code::blocks are also build systems
+they take other inputs specific to them 
+
+
+build system generators 
+you write generic recipe for a build system generator 
+bundle recipe with source code
+anyone who wants build software runs build system generator 
+
+build recipe - you write code for build system generator
+configure process- another user obtains code and build recipe 
+build/make process - build instructions passed to environment which executes compiler and linker 
+
+CMAKE 
+modern build system with its own GUI 
+CAN GENERTE INSTALLERS FOR A NUMBER OF OS 
+cmake = build system generateor 
+make  = build system 
+
+
+
+
+
+
+
+  
