@@ -13,3 +13,62 @@ Enter code here:
 .....,,sl.s..w....com
 
 
+INTEGRATED DEVELOPMENT ENVIRONMENT (IDE)
+
+compiler and build process 
+series of commands to programs such as compiler and linker to translate code to an executable program 
+
+
+for larger projects:
+mechanism for storing/sharing code
+easily compile the code 
+
+take control of compiler and build process 
+
+how compiler works 
+
+libraries 
+cmake build system 
+
+visual studio is a compiler from windows 
+
+Compiling executable - Build process 
+
+compiling -  human readable code to machine readable instruction 
+linking  - links iunstructions as single code, adds data to create useful output like executable 
+
+command line 
+
+hello.cpp 
+hello.o  =  compiled version of code 
+hello.exe  = executable 
+
+to link to g++ 
+g++ hello.o -o hello.exe
+
+to link 2 or more source files, use
+g++ file1.o file2.o -o calc.exe 
+
+this is done 
+
+source code(.cpp) - compile - object files(.o) - link - output (.exe)
+
+libraries -  packaged code that can be reused
+
+static libraries 
+dynamic libraries 
+
+static libraries  - 
+linked when project is built 
+object file (.O)
+g++ = (.a) 
+static library = archive containing 1 or more object (.o) files 
+
+
+
+dynamic libraries-
+linked with the executable only when it is executed. happens at runtime 
+
+
+
+
