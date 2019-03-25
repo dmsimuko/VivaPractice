@@ -63,12 +63,18 @@ linked when project is built
 object file (.O)
 g++ = (.a) 
 static library = archive containing 1 or more object (.o) files 
+when compiling, must tell the compiler where to find header files that are included (I)
+when linking the program, tell linker where to find libraries (L)
 
 
 
 dynamic libraries-
 linked with the executable only when it is executed. happens at runtime 
+single copy of library exists on the computer and aplications dynamically link to and share library when run 
+on windows these libraries are called (.dll) 
+to build (.dll) >g++ -c adder.cpp -Dmaths_EXPORTS 
+>g++ -shared adder.o -o libmaths.dll -Wl,--out-implib,libmaths.dll.a
 
-
+
 
 
