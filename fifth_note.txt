@@ -102,7 +102,41 @@ then build and run
 >hello_qt2
 
 
-basic layout 
+VTK 
+Vtk is open sourvr softawre system for 3D computer graphics, image porcessing, visualistations
+c++ class library 3D cad models
+use vtk to enable model visualisation 
+
+vtk is built using cmake 
+
+vtk set of libraries that allow you to generate advanced computer graphics and visualisations
+object orientated approach 
+
+3d visuas in vtk created bylinking fundamental objects (C++ classes) 
+
+incude 
+vtkmapper - geo representation of 3d object
+vtkactor - how an object is rendered 
+vtkproperty - defines appearance of actor including color, transparency, lighting
+vtklight - source of light to eluminate scene 
+vtkcamera - position, focal point and view of camera 
+vtkrenderer - coordinares the render process
+vtkrenderwindow - manages a window on display device
+
+vtk visualisation pipeline 
+
+source
+
+filters 
+
+mappers
+
+actors 
+
+renderers and windows 
+
+
+
 
 
 
