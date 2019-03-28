@@ -17,3 +17,23 @@ doxygen: tool that looks through source code for specially formatted comments me
 final results are a webpage, pdf document and bundles of ducuments. 
 
 cpack: cpack is yet another component of the cmake ecosystem. provides a convinent way to gather executables, libraries, etc. 
+
+writing and running tests. 
+
+tests are simply porgrammes that return 0 on sucess and non zero on failure 
+
+thwo things to note: 
+
+inclusion of include(ctest) after project statement 
+enables testing for the project and make sure the corresponding targets are created 
+
+in line add_test(test1 test1) 
+first argument is name of test, secornd is name of executable that will be run as part of test 
+
+Doxygen 
+documentation of code, both targeted at end users and client developers 
+
+no of tools have emerged 
+coder can insert essentially anythign in the source code as long as its part of a comment // or /* */
+comments made in this structure are reognised by the system and extracted by the documentation generator 
+
