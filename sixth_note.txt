@@ -1,0 +1,19 @@
+Testing, documentation and automation 
+
+
+testing - testing code with a number of test programes, use systems that will run tests on every change of code 
+documentation - small projects, documentation can be done by choosing appropriate class, method, variabe names 
+packaging - packaging the software need variables, libraries to be set and in the correct locations. depooyment technologies are used for that reason, to put things all together 
+
+cTest: part of cmake, provides two services:
+allows easy run all tests that supply with you package 
+summarieses the results in dashboard that can be submitted to a webserver for easy inspection 
+
+travis-ci:
+a continuous integration service that can be set up to run a script everytime a code change is commited to repository. 
+builds binaries and runs the tests. 
+
+doxygen: tool that looks through source code for specially formatted comments meant to be included in the package documentation 
+final results are a webpage, pdf document and bundles of ducuments. 
+
+cpack: cpack is yet another component of the cmake ecosystem. provides a convinent way to gather executables, libraries, etc. 
